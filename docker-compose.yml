@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: wordle
+      POSTGRES_PASSWORD: wordle_password
+      POSTGRES_DB: wordle
